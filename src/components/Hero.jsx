@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="bg-[#404EED] h-[40rem] flex flex-col justify-center items-center overflow-hidden ">
       <Nav />
     
-      <div class="flex w-full  justify-center items-center text-center max-w-3xl text-white font-bold">
+      <div class="flex w-full relative top-11 justify-center items-center text-center max-w-3xl text-white font-bold">
         <div class="flex flex-col ">
           <div class="flex flex-col">
             <h1 class="text-6xl font-bold">Imagine a place...</h1>
@@ -43,7 +43,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full top-[-280px]">
         {/* <img src={download}  /> */}
         <div className="absolute hidden sm:block ">
           <svg
