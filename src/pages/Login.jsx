@@ -1,4 +1,5 @@
 /* eslint-disable react/style-prop-object */
+import {Link} from 'react-router-dom'
 import test from "../components/text.svg";
 export default function Login() {
   return (
@@ -45,7 +46,9 @@ export default function Login() {
            Login
           </button>
         </form>
-        
+        <Link to="/register" className='text-white underline'>
+          Register
+        </Link>
       </div>
       </div>
     </div>
