@@ -37,7 +37,7 @@ export default function Hero() {
                 Download for Linux
               </button>
             </div>
-            <button class="flex bg-black/30 px-3 py-4 rounded-3xl  justify-center items-center w-[19rem] ">
+            <button class="flex bg-black/30 px-3 py-4 hover:shadow-md rounded-3xl  justify-center items-center w-[19rem] ">
               Open Discord in your browser
             </button>
           </div>
@@ -124,11 +124,11 @@ export default function Hero() {
         </div>
         <img
           src={download1}
-          className="absolute  lg:mt-[230px] left-0 ml-[-290px] hidden lg:block"
+          className="absolute  lg:mt-[270px] left-0 ml-[-290px] hidden lg:block"
         />
         <img
           src={download2}
-          className=" absolute lg:mr-[-170px] lg:mt-[230px] right-0   mr-[-150px] mt-[80px] hidden md:block "
+          className=" absolute lg:mr-[-170px] lg:mt-[250px] right-0   mr-[-150px] mt-[80px] hidden md:block "
         />
       </div>
     </div>

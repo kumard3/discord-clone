@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const navdata = [
   {
     name:"Download"
@@ -45,7 +46,9 @@ export default function Nav() {
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
           <button className="self-center px-8 py-3 font-semibold rounded bg-white text-black">
+           <Link to='/login' >
            Login
+           </Link>
           </button>
         </div>
 
