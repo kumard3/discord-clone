@@ -1,5 +1,22 @@
 import React from "react";
-
+const navdata = [
+  {
+    name:"Download"
+  },{
+    name: "Nitro"
+  },
+  {
+    name: "Safety"
+  },
+  {
+    name: "Support"
+  },{
+    name: "Blog"
+  },
+  {
+    name: "Careers"
+  }
+]
 export default function Nav() {
   return (
     <header className="p-4 text-white w-full">
@@ -13,42 +30,22 @@ export default function Nav() {
         </a>
         <ul className="items-stretch hidden space-x-3 lg:flex">
           <li className="flex">
-            <a
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-            >
-              Link
-            </a>
+            {navdata.map((item, index) => {
+              return(
+                <a
+                href="#"
+                className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              >
+                {item.name}
+              </a>
+              )
+            } )}
+
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 rounded">Sign in</button>
-          <button className="self-center px-8 py-3 font-semibold rounded bg-blue-600 text-white">
-            Sign up
+          <button className="self-center px-8 py-3 font-semibold rounded bg-white text-black">
+           Login
           </button>
         </div>
 

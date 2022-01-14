@@ -9,11 +9,11 @@ export default function Hero() {
     <div className="bg-[#404EED] h-[45rem]  flex flex-col lg:justify-center lg:items-center overflow-hidden ">
       <Nav />
     
-      <div class=" flex w-full relative top-11 left-0 ml-3  justify-start lg:justify-center lg:items-center text-center max-w-md lg:max-w-2xl  text-white font-bold">
+      <div class=" flex w-full relative top-11 left-0 ml-3  justify-start lg:justify-center lg:items-center text-center max-w-md lg:max-w-3xl  text-white font-bold">
         <div class="flex flex-col ">
           <div class="flex flex-col">
-            <h1 class="text-6xl text-left font-bold">Imagine a place...</h1>
-            <div class="text-xl text-left my-10">
+            <h1 class="text-6xl lg:text-left text-center font-bold">Imagine a place...</h1>
+            <div class="text-xl lg:text-left text-center my-10">
               ...where you can belong to a school club, a gaming group, or a
               worldwide art community. Where just you and a handful of friends
               can spend time together. A place that makes it easy to talk every
@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
         <img
           src={download1}
-          className="absolute  lg:mt-[230px] left-0 ml-[-200px] hidden lg:block"
+          className="absolute  lg:mt-[230px] left-0 ml-[-290px] hidden lg:block"
         />
         <img
           src={download2}
