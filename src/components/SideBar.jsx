@@ -1,6 +1,6 @@
 export default function SideBar() {
   return (
-    <div className="max-w-[5rem] flex flex-col bg-[#202225] min-h-screen">
+    <div className="w-[5rem] flex flex-col bg-[#202225] min-h-screen">
       <div className="flex items-center justify-center flex-col">
         <button class="bg-indigo-500 flex w-[48px] h-[48px] justify-center items-center my-3 py-4 px-3 rounded-2xl hover:rounded-lg transition-all duration-300  ">
           <svg
