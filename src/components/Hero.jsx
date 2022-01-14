@@ -6,22 +6,22 @@ import download1 from "../download1.svg";
 import download2 from "../download2.svg";
 export default function Hero() {
   return (
-    <div className="bg-[#404EED] h-[40rem] flex flex-col justify-center items-center overflow-hidden ">
+    <div className="bg-[#404EED] h-[45rem]  flex flex-col lg:justify-center lg:items-center overflow-hidden ">
       <Nav />
     
-      <div class="flex w-full relative top-11 justify-center items-center text-center max-w-3xl text-white font-bold">
+      <div class=" flex w-full relative top-11 left-0 ml-3  justify-start lg:justify-center lg:items-center text-center max-w-md lg:max-w-2xl  text-white font-bold">
         <div class="flex flex-col ">
           <div class="flex flex-col">
-            <h1 class="text-6xl font-bold">Imagine a place...</h1>
-            <div class="text-xl my-10">
+            <h1 class="text-6xl text-left font-bold">Imagine a place...</h1>
+            <div class="text-xl text-left my-10">
               ...where you can belong to a school club, a gaming group, or a
               worldwide art community. Where just you and a handful of friends
               can spend time together. A place that makes it easy to talk every
               day and hang out more often.
             </div>
           </div>
-          <div class="flex items-center justify-center  ">
-            <div class="flex bg-black px-3 py-4 rounded-3xl mx-2">
+          <div class="flex flex-start lg:items-center lg:justify-center flex-col lg:flex-row ">
+            <div class="flex bg-black px-3 py-4 mb-3 rounded-3xl mx-2 justify-center items-center w-[15rem]">
               <button class="flex">
                 <svg
                   width="24"
@@ -37,7 +37,7 @@ export default function Hero() {
                 Download for Linux
               </button>
             </div>
-            <button class="flex bg-black/30 px-3 py-4 rounded-3xl ">
+            <button class="flex bg-black/30 px-3 py-4 rounded-3xl  justify-center items-center w-[19rem] ">
               Open Discord in your browser
             </button>
           </div>
@@ -45,7 +45,7 @@ export default function Hero() {
       </div>
       <div className="relative w-full h-full top-[-280px]">
         {/* <img src={download}  /> */}
-        <div className="absolute hidden sm:block ">
+        <div className="absolute hidden md:block ">
           <svg
             width="2560"
             height="626"
@@ -124,11 +124,11 @@ export default function Hero() {
         </div>
         <img
           src={download1}
-          className="absolute mt-[190px] left-0 ml-[-200px] hidden lg:block"
+          className="absolute  lg:mt-[230px] left-0 ml-[-200px] hidden lg:block"
         />
         <img
           src={download2}
-          className=" absolute mr-[-100px] mt-[190px] right-0 "
+          className=" absolute lg:mr-[-170px] lg:mt-[230px] right-0   mr-[-150px] mt-[80px] hidden md:block "
         />
       </div>
     </div>
