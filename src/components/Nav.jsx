@@ -45,11 +45,14 @@ export default function Nav() {
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 font-semibold rounded bg-white text-black">
-           <Link to='/login' >
+      
+           <Link to='/login' 
+          className="self-center px-8 py-3 font-semibold rounded bg-white text-black">
+           
+           
            Login
            </Link>
-          </button>
+
         </div>
 
         <button className="p-4 lg:hidden">
