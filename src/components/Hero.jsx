@@ -6,7 +6,7 @@ import download1 from "../download1.svg";
 import download2 from "../download2.svg";
 export default function Hero() {
   return (
-    <div className="bg-[#404EED] h-[45rem]  flex flex-col lg:justify-center lg:items-center overflow-hidden ">
+    <div className="bg-[#404EED] md:h-[45.5rem] flex flex-col lg:justify-center lg:items-center overflow-hidden ">
       <Nav />
     
       <div class=" flex w-full relative top-11 left-0 ml-3  justify-start lg:justify-center lg:items-center text-center max-w-md lg:max-w-3xl  text-white font-bold">
@@ -43,9 +43,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-full top-[-280px]">
+      <div className="relative flex md:block w-full h-full md:top-[-280px] pt-[100px] md:pt-0">
         {/* <img src={download}  /> */}
-        <div className="absolute hidden md:block ">
+        <div className=" sm:absolute hidden md:block ">
           <svg
             width="2560"
             height="626"
@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
         <img
           src={download1}
-          className="absolute  lg:mt-[270px] left-0 ml-[-290px] hidden lg:block"
+          className=" relative md:absolute ml-[-4rem]  lg:mt-[270px] left-0 lg:ml-[-290px] md:hidden lg:block"
         />
         <img
           src={download2}
