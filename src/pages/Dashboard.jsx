@@ -6,9 +6,9 @@ export default function Dashboard() {
   return (
     <div className="flex bg-[#37393E] w-full ">
       <SideBar />
-      <section className="flex ">
+      <section className="flex w-full ">
       <SideSection />
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full ">
           <img src={download} />
         </div>
       </section>
