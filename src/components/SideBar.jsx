@@ -1,4 +1,17 @@
 export default function SideBar() {
+  const data = [
+ {   name:'A',},
+ {   name:'B',},
+ {   name:'C',},
+ {   name:'D',},
+ {   name:'E',},
+ {   name:'F',},
+ {   name:'G',},
+ {   name:'H',},
+ {   name:'I',},
+ {   name:'J',},
+ {   name:'K',},
+  ]
   return (
     <div className="w-[5rem] flex flex-col bg-[#202225] min-h-screen">
       <div className="flex items-center justify-center flex-col">
@@ -17,6 +30,19 @@ export default function SideBar() {
           </svg>
         </button>
         <div className="border-b-2 bg-gray-100 w-[3.5rem]"></div>
+        <nav className="text-white text-xl">
+          <div>
+            { data.map((item) => {
+              return (
+                <button className="bg-[#36393F] hover:bg-indigo-500 flex w-[48px] h-[48px] justify-center items-center my-3 py-4 px-3 rounded-2xl hover:rounded-lg transition-all duration-300  ">
+                {item.name}
+              </button>
+              )
+
+            })}
+
+          </div>
+        </nav>
       </div>
     </div>
   );
